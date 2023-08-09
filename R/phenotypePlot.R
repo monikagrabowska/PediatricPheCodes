@@ -8,7 +8,7 @@ phenotypePlot <-
            lc.labels=F,
            y.axis.interval=y.axis.interval) {
     
-    d=merge(d,annotate.phenotype.description,by.x="phenotype",by.y="phecode")
+    d=merge(d,PedPheCodes::annotate.phenotype.description,by.x="phenotype",by.y="phecode")
     
     d=d[!is.na(d$groupnum),]
     

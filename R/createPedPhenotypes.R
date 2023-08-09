@@ -17,7 +17,7 @@ createPedPhenotypes <-
     phecode=phecode[phecode$count>0,]
     
     message("Mapping exclusions...")
-    exclusions = merge(phecode %>% rename(exclusion_criteria=code), exclusion.map, by = "exclusion_criteria")
+    exclusions = merge(phecode %>% rename(exclusion_criteria=code), PedPheCodes::exclusion.map, by = "exclusion_criteria")
     exclusions = exclusions %>%  transmute(id, code, count=-1) %>% distinct()
     phecode=rbind(phecode,exclusions)
     
