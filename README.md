@@ -29,13 +29,13 @@ use the following import statements, or run the packageSetup function:
     ## Downloading GitHub repo monikagrabowska/PediatricPheCodes@HEAD
 
     ## ── R CMD build ────────────────────────────────────────────────────────────────────────────────────────
-    ##      checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmpO2WVBt/remotesd83c7cb5ef8a/monikagrabowska-PediatricPheCodes-7e65506/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmpO2WVBt/remotesd83c7cb5ef8a/monikagrabowska-PediatricPheCodes-7e65506/DESCRIPTION’
+    ##      checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmpO2WVBt/remotesd83c746ff6e3/monikagrabowska-PediatricPheCodes-109f0df/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmpO2WVBt/remotesd83c746ff6e3/monikagrabowska-PediatricPheCodes-109f0df/DESCRIPTION’
     ##   ─  preparing ‘PediatricPheCodes’:
     ##   ✔  checking DESCRIPTION meta-information
     ##   ─  checking for LF line-endings in source and make files and shell scripts
     ##   ─  checking for empty or unneeded directories
-    ##        NB: this package now depends on R (>= 3.5.0)
-    ##        WARNING: Added dependency on R >= 3.5.0 because serialized objects in
+    ##      NB: this package now depends on R (>= 3.5.0)
+    ##      WARNING: Added dependency on R >= 3.5.0 because serialized objects in
     ##      serialize/load version 3 cannot be read in older versions of R.
     ##      File(s) containing such objects:
     ##        ‘PediatricPheCodes/data/annotate_phenotype_description.rda’
@@ -405,7 +405,7 @@ notable associations.
 
     test_plot1 <- plotManhattan(results, annotate.phenotype = T, annotate.level = 0.005, y.axis.interval = 1)
 
-    test_plot1
+    print(test_plot1)
 
 ![](README_files/figure-markdown_strict/step5a-1.png)
 
@@ -415,7 +415,7 @@ notable associations.
 
     test_plot2 <- plotManhattan(results, annotate.phenotype = T, annotate.list = c("622"), y.axis.interval = 1)
 
-    test_plot2
+    print(test_plot2)
 
 ![](README_files/figure-markdown_strict/step5b-1.png)
 
@@ -425,7 +425,7 @@ notable associations.
 
     test_plot3 <- plotManhattan(results, annotate.phenotype = F, y.axis.interval = 1)
 
-    test_plot3
+    print(test_plot3)
 
 ![](README_files/figure-markdown_strict/step5c-1.png)
 
