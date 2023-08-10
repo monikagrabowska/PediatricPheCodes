@@ -26,8 +26,26 @@ use the following import statements, or run the packageSetup function:
 
     ## Using GitHub PAT from the git credential store.
 
-    ## Skipping install of 'PediatricPheCodes' from a github remote, the SHA1 (5a9bef15) has not changed since last install.
-    ##   Use `force = TRUE` to force installation
+    ## Downloading GitHub repo monikagrabowska/PediatricPheCodes@HEAD
+
+    ## ── R CMD build ────────────────────────────────────────────────────────────────────────────────────────
+    ##      checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmpO2WVBt/remotesd83c7cb5ef8a/monikagrabowska-PediatricPheCodes-7e65506/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmpO2WVBt/remotesd83c7cb5ef8a/monikagrabowska-PediatricPheCodes-7e65506/DESCRIPTION’
+    ##   ─  preparing ‘PediatricPheCodes’:
+    ##   ✔  checking DESCRIPTION meta-information
+    ##   ─  checking for LF line-endings in source and make files and shell scripts
+    ##   ─  checking for empty or unneeded directories
+    ##        NB: this package now depends on R (>= 3.5.0)
+    ##        WARNING: Added dependency on R >= 3.5.0 because serialized objects in
+    ##      serialize/load version 3 cannot be read in older versions of R.
+    ##      File(s) containing such objects:
+    ##        ‘PediatricPheCodes/data/annotate_phenotype_description.rda’
+    ##        ‘PediatricPheCodes/data/exclusion_map.rda’
+    ##        ‘PediatricPheCodes/data/rollup_map.rda’
+    ##        ‘PediatricPheCodes/data/sex_restriction.rda’
+    ##        ‘PediatricPheCodes/data/vocabulary_map.rda’
+    ## ─  building ‘PediatricPheCodes_0.1.0.tar.gz’
+    ##      
+    ## 
 
     library(PediatricPheCodes)
 
