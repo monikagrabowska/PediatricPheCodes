@@ -124,6 +124,6 @@ phenotypePlot <-
         plot = plot + ggrepel::geom_text_repel(aes(label=description),colour="black",data=d[d$annotate,],size=annotate.size,angle=annotate.angle)
       }
     }
-    plot
+    print(plot)
   }
 
