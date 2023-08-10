@@ -1,5 +1,6 @@
 \name{phe_as_ext}
 \alias{phe_as_ext}
+\title{PheWAS using generalized linear model}
 
 \description{
 %%Called within the phewas_ext() function to perform PheWAS analysis using a generalized linear model (“glm”). For more details on arguments/outputs of PheWAS, see the phewas_ext() function.}

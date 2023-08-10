@@ -1,5 +1,6 @@
 \name{mapICDCodesToPedPhecodes}
 \alias{mapICDCodesToPedPhecodes}
+\title{Maps ICD codes to pediatric phecodes}
 
 \description{
 %%  Called within the createPedPhenotypes() function. This function takes the ICD-9-CM and ICD-10-CM codes in the id.vocab.code.index data frame that was passed into createPedPhenotypes() and maps them to pediatric phecodes. It returns a data frame with three columns: the id and index columns from the original id.vocab.code.index data frame, along with a new phecode column.}

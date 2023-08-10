@@ -1,5 +1,6 @@
 \name{phe_as_logistf}
 \alias{phe_as_logistf}
+\title{PheWAS using Firth's logistic regression}
 
 \description{
 %%Called within the phewas_ext() function to perform PheWAS analysis using Firth’s logistic regression (“logistf”). For more details on arguments/outputs of PheWAS, see the phewas_ext() function.}

@@ -1,5 +1,6 @@
 \name{restrictPedPhecodesBySex}
 \alias{restrictPedPhecodesBySex}
+\title{Applies sex-specific phecode restrictions}
 
 \description{
 %%  Called within the createPedPhenotypes() function. This function applies the sex restrictions necessary to properly evaluate the sex-specific pediatric phecodes.}

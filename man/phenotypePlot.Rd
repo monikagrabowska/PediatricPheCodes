@@ -1,5 +1,6 @@
 \name{phenotypePlot}
 \alias{phenotypePlot}
+\title{Extended PheWAS Manhattan plotting}
 
 \description{
 %%Called within the plotManhattan() function that generates a PheWAS Manhattan plot with phenotypes on the x-axis and p-values on a -log10 scale on the y-axis. This function enables some additional plotting options compared to the plotManhattan() function.}

@@ -1,5 +1,6 @@
 \name{phewas_ext}
 \alias{phewas_ext}
+\title{PheWAS analysis using multiple methods}
 
 \description{
 %%This function performs a PheWAS analysis using multiple methods, with optional adjustment for user-specified covariates. By default, uses a generalized linear model.
