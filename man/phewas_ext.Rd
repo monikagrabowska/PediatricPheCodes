@@ -3,7 +3,7 @@
 \title{PheWAS analysis using multiple methods}
 
 \description{
-This function performs a PheWAS analysis using multiple methods, with optional adjustment for user-specified covariates. By default, uses a generalized linear model.
+This function performs a PheWAS analysis using multiple methods, with optional adjustment for user-specified covariates. By default, uses a generalized linear model.}
 
 \arguments{
 \item{phenotypes}{

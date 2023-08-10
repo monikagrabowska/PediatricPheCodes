@@ -11,6 +11,7 @@ Returns an output data frame with many parameters based on the requested informa
 \references{
 \url{
 https://github.com/PheWAS/PheWAS/blob/master/R/phe_as_ext.R}
+}
 
 \note{
 Code was not modified from the phe_as_ext() function in the original PheWAS R package.}
