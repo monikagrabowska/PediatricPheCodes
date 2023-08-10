@@ -13,7 +13,7 @@ createPedPhenotypes <-
     phemapped=mapICDCodesToPedPhecodes(id.vocab.code.index) %>% transmute(id, code=phecode, index)
     
     message("Aggregating codes...")
-    phecode=ungroup(summarize(group_by(phemapped,id,code),count=aggregate.fun(index)))
+    phecode=ungroup(summarize(group_by(phemapped,id,code),count=aggregate_fun(index)))
     phecode=phecode[phecode$count>0,]
     
     message("Mapping exclusions...")

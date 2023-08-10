@@ -1,6 +1,6 @@
 phewas_ext <-
   function(phenotypes, genotypes, data, covariates=NA,cores=1, additive.genotypes=T,
-           method="glm", strata=NA, factor.contrasts=contr.phewas,
+           method="glm", strata=NA, factor.contrasts=contr_phewas,
            return.models=F, min.records=20, MASS.confint.level=NA) {
     #Require an input data frame
     if(missing(data)) {
