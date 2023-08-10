@@ -21,7 +21,7 @@ The p-value threshold for annotating phenotypes on the Manhattan plot. The defau
 \item{y.axis.interval}{
 The interval used for the y-axis of the Manhattan plot (default value = 5).}
 
-\item{…} {
+\item{…}{
 Further parameters to be passed down to the phenotypePlot() function, which enables further plot customization.}
 }
 
