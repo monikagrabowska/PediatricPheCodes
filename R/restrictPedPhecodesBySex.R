@@ -1,3 +1,4 @@
+#' @export
 restrictPedPhecodesBySex <- function(phenotypes,id.sex) {
   data=merge(phenotypes,id.sex,by=1,all.x=T)
   #Get the column of the sex

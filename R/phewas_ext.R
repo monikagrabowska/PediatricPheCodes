@@ -1,3 +1,4 @@
+#' @export
 phewas_ext <-
   function(phenotypes, genotypes, data, covariates=NA,cores=1, additive.genotypes=T,
            method="glm", strata=NA, factor.contrasts=contr_phewas,

@@ -1,3 +1,4 @@
+#' @export
 createPedPhenotypes <-
   function(id.vocab.code.index,
            id.sex,

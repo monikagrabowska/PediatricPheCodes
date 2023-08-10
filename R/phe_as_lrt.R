@@ -1,3 +1,4 @@
+#' @export
 phe_as_lrt <-
   function(phe.gen, min.records=20,return.models=T, my.data, ...) {
     if(!missing(my.data)) data=my.data

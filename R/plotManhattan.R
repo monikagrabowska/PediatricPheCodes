@@ -1,3 +1,4 @@
+#' @export
 plotManhattan <-
   function(d, suggestive.line=0.05, significant.line,
            annotate.level,

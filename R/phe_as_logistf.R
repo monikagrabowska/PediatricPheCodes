@@ -1,3 +1,4 @@
+#' @export
 phe_as_logistf <-
   function(phe.gen, additive.genotypes=T,min.records=20,return.models=F,confint.level=NA, factor.contrasts=NA, my.data, ...) {
     if(!missing(my.data)) data=my.data

@@ -1,3 +1,4 @@
+#' @export
 phenotypePlot <-
   function(d, suggestive.line, significant.line,
            size.x.labels=9, size.y.labels=9,

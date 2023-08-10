@@ -1,3 +1,4 @@
+#' @export
 mapICDCodesToPedPhecodes <-
   function(input) {
     
