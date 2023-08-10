@@ -1,5 +1,5 @@
 \name{aggregate.fun}
-\alias{aggregate.fun}
+\alias{aggregate_fun}
 
 
 \description{

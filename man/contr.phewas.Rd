@@ -1,5 +1,5 @@
 \name{contr.phewas}
-\alias{contr.phewas}
+\alias{contr_phewas}
 
 
 \description{
