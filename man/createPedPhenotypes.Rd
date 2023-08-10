@@ -1,5 +1,6 @@
 \name{createPedPhenotypes}
 \alias{createPedPhenotypes}
+\title{Create pediatric phenotypes}
 
 \description{
 This function translates ICD-9-CM and ICD-10-CM codes into pediatric phecodes. It takes in a data frame with four columns: id, vocabulary_id (specified as “ICD9CM” and/or “ICD10CM”), code, and index. The function returns a data frame with boolean phenotypes for the individuals in the input file – the first column contains the individual IDs and the remaining columns indicate case/control/exclude status for each of the pediatric phecodes (case = TRUE, control = FALSE, exclude = NA).}
