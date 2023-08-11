@@ -1,3 +1,5 @@
+# PedsPheWAS R package
+
 ## Introduction
 
 The PedsPheWAS R package is designed to perform phenome-wide association
