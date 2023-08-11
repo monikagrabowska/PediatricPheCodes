@@ -3,7 +3,7 @@ Type: Package
 Title: Pediatric Phenome-Wide Association Study R Package
 Version: 0.1
 Author: Monika Grabowska, Chris Guardo
-Maintainer: wei-qi.wei@vumc.org
+Maintainer: "wei-qi.wei@vumc.org"
 Description: This package contains functions to perform a phenome-wide association study (PheWAS) using pediatric phecodes (Peds-Phecodes). 
 License: What license is it under?
 Encoding: UTF-8
