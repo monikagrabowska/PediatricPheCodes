@@ -14,7 +14,7 @@ This package was built based on the original PheWAS R package available at: http
 ## Installation
 To install the latest development version of the PedsPheWAS R package, use the following code:
 
-```{r setup1, echo = TRUE, message = FALSE}
+```{r setup1, echo = TRUE, message = FALSE, warning = FALSE}
 # install and load required packages 
 packages <- c("devtools","vroom","tidyverse","dplyr","parallel")
 installed_packages <- packages %in% rownames(installed.packages())
@@ -24,10 +24,10 @@ if (any(installed_packages == FALSE)) {
 invisible(lapply(packages, library, character.only = TRUE))
 ```
 
-```{r setup2, echo = TRUE, message = FALSE}
+```{r setup2, echo = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
 # install PedsPheWAS package
-devtools::install_github("monikagrabowska/PediatricPheCodes")
-library(PediatricPheCodes)
+devtools::install_github("monikagrabowska/PedsPheWAS")
+library(PedsPheWAS)
 ```
 
 ## Tutorial 
