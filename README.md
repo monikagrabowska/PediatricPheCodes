@@ -21,26 +21,6 @@ use the following code:
 
     # install PedsPheWAS package
     devtools::install_github("monikagrabowska/PediatricPheCodes")
-
-    ## ── R CMD build ──────────────────────────────────────────────────────────────────────────────────────────────────
-    ##      checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmppdsD72/remotes1446844341a16/monikagrabowska-PediatricPheCodes-791d2e0/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/d5/07d6633d6q74phnhw292vmc80000gn/T/RtmppdsD72/remotes1446844341a16/monikagrabowska-PediatricPheCodes-791d2e0/DESCRIPTION’
-    ##   ─  preparing ‘PediatricPheCodes’:
-    ##   ✔  checking DESCRIPTION meta-information
-    ##   ─  checking for LF line-endings in source and make files and shell scripts
-    ##   ─  checking for empty or unneeded directories
-    ##        NB: this package now depends on R (>= 3.5.0)
-    ##      WARNING: Added dependency on R >= 3.5.0 because serialized objects in
-    ##      serialize/load version 3 cannot be read in older versions of R.
-    ##      File(s) containing such objects:
-    ##        ‘PediatricPheCodes/data/annotate_phenotype_description.rda’
-    ##        ‘PediatricPheCodes/data/exclusion_map.rda’
-    ##        ‘PediatricPheCodes/data/rollup_map.rda’
-    ##        ‘PediatricPheCodes/data/sex_restriction.rda’
-    ##        ‘PediatricPheCodes/data/vocabulary_map.rda’
-    ## ─  building ‘PediatricPheCodes_0.1.tar.gz’
-    ##      
-    ## 
-
     library(PediatricPheCodes)
 
 ## Tutorial
