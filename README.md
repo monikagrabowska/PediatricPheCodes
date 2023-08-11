@@ -45,8 +45,6 @@ required column formatting.
 
 ![example_data_icd](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/example_data_icd.png)
 
-/monikagrabowska/PediatricPheCodes/tree/main/example/example_data_icd.png)
-
     example_data_sex <- vroom::vroom("./data/test_sex.csv",
                                      .name = janitor::make_clean_names, delim = ",",
                                      col_types = c(id = "i", sex = "c"))
