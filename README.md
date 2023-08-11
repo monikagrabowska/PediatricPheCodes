@@ -23,7 +23,7 @@ use the following code:
 
     # install PedsPheWAS package
     devtools::install_github("monikagrabowska/PedsPheWAS")
-    library(PediatricPheCodes)
+    library(PedsPheWAS)
 
 ## Tutorial
 
