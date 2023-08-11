@@ -22,7 +22,7 @@ use the following code:
     invisible(lapply(packages, library, character.only = TRUE))
 
     # install PedsPheWAS package
-    devtools::install_github("monikagrabowska/PediatricPheCodes")
+    devtools::install_github("monikagrabowska/PedsPheWAS")
     library(PediatricPheCodes)
 
 ## Tutorial
@@ -45,19 +45,19 @@ required column formatting.
                                      .name = janitor::make_clean_names, delim = ",",
                                      col_types = c(id = "i", vocabulary_id = "c", code = "c", count = "i"))
 
-![example_data_icd](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/example_data_icd.png)
+![example_data_icd](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/example_data_icd.png)
 
     example_data_sex <- vroom::vroom("./data/test_sex.csv",
                                      .name = janitor::make_clean_names, delim = ",",
                                      col_types = c(id = "i", sex = "c"))
                                   
-![example_data_sex](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/example_data_sex.png)
+![example_data_sex](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/example_data_sex.png)
 
     example_data_genotypes <- vroom::vroom("./data/test_genotypes.csv",
                                            .name = janitor::make_clean_names, delim = ",",
                                            col_types = c(id = "i", rs_example = "i"))
 
-![example_data_genotypes](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/example_data_genotypes.png)
+![example_data_genotypes](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/example_data_genotypes.png)
 
 ### 2) Mapping ICD-9-CM and ICD-10-CM codes to pediatric phecodes (Peds-Phecodes)
 
@@ -72,7 +72,7 @@ case/control/exclude status (i.e., TRUE/FALSE/NA) for each phecode.
 
 The example output is shown below:
 
-![ped_phenotypes](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/ped_phenotypes.png)
+![ped_phenotypes](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/ped_phenotypes.png)
 
 ### 3) Preparing data for PheWAS
 
@@ -85,7 +85,7 @@ gender), these should also be joined to the data frame.
 
 The final data frame is shown below:
 
-![df_full](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/df_full.png)
+![df_full](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/df_full.png)
 
 ### 4) Performing PheWAS
 
@@ -96,7 +96,7 @@ phenotype, genotype, and any covariate data.
 
 The example output is shown below:
 
-![results](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/results.png)
+![results](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/results.png)
 
 ### 5) Plotting PheWAS results
 
@@ -115,19 +115,19 @@ the following code:
 
     test_plot1 <- plotManhattan(results, annotate.phenotype = T, annotate.level = 0.005, y.axis.interval = 1)
 
-![test_plot1](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/test_plot1.png)
+![test_plot1](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/test_plot1.png)
 
 ##### 2) Manhattan plot with annotations specified using annotate.list:
 
     test_plot2 <- plotManhattan(results, annotate.phenotype = T, annotate.list = c("622"), y.axis.interval = 1)
 
-![test_plot2](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/test_plot2.png)
+![test_plot2](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/test_plot2.png)
 
 ##### 3) Manhattan plot without annotations:
 
     test_plot3 <- plotManhattan(results, annotate.phenotype = F, y.axis.interval = 1)
 
-![test_plot3](https://github.com/monikagrabowska/PediatricPheCodes/blob/main/example/test_plot3.png)
+![test_plot3](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/test_plot3.png)
 
 ## Citations
 

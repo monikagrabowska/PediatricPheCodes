@@ -1,4 +1,4 @@
-Package: PediatricPheCodes
+Package: PedsPheWAS
 Type: Package
 Title: Pediatric Phenome-Wide Association Study R Package
 Version: 0.1
