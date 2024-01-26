@@ -17,7 +17,7 @@ mapICDCodesToPedPhecodes <-
     output = distinct(output)
 
     #Perform the rollup
-    withCallingHandlers(output <- merge(output,PediatricPheCodes::rollup.map,by="code"),
+    withCallingHandlers(output <- merge(output,PedsPheWAS::rollup.map,by="code"),
                         warning = function(w) { if (grepl("coercing into character vector", w$message)) {invokeRestart("muffleWarning")}})
     output = output %>% select(-code) %>% rename(phecode=phecode_unrolled)
 
