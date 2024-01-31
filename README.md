@@ -30,10 +30,12 @@ use the following code:
 This tutorial demonstrates how to use the PedsPheWAS R package to
 perform a PheWAS analysis using simulated data.
 
+The current version of Peds-Phecodes supports ICD-9-CM, ICD-10-CM, and SNOMED CT codes.
+
 ### 1) Prepare and load input data
 
 To perform a PheWAS, the user must provide three data frames: 1) a data
-frame containing patient ICD-9-CM and ICD-10-CM codes and code counts
+frame containing patient diagnosis codes (ICD-9-CM, ICD-10-CM, SNOMED CT) and code counts
 (or code index dates), 2) a data frame with patient sex (used to
 determine case/control/exclude status for sex-specific phecodes), and 3)
 a data frame containing the patient genotypes.
@@ -59,10 +61,9 @@ required column formatting.
 
 ![example_data_genotypes](https://github.com/monikagrabowska/PedsPheWAS/blob/main/example/example_data_genotypes.png)
 
-### 2) Mapping ICD-9-CM and ICD-10-CM codes to pediatric phecodes (Peds-Phecodes)
+### 2) Mapping patient diagnosis codes to pediatric phecodes (Peds-Phecodes)
 
-The createPedPhenotypes() function maps the patient ICD-9-CM and
-ICD-10-CM codes to Peds-Phecodes.
+The createPedPhenotypes() function maps ICD-9-CM, ICD-10-CM, and SNOMED CT codes to Peds-Phecodes.
 
     ped_phenotypes <- createPedPhenotypes(example_data_icd, example_data_sex)
 
@@ -133,7 +134,7 @@ the following code:
 
 ##### Peds-Phecodes:
 
-(To be updated)
+Grabowska ME, Van Driest SL, Robinson JR, Patrick AE, Guardo C, Gangireddy S, Ong HH, Feng Q, Carroll R, Kannankeril PJ, Wei WQ. Developing and evaluating pediatric phecodes (Peds-Phecodes) for high-throughput phenotyping using electronic health records. J Am Med Inform Assoc. 2024 Jan 18;31(2):386-395. doi: 10.1093/jamia/ocad233. PMID: 38041473; PMCID: PMC10797257.
 
 ##### Original PheWAS R package:
 
