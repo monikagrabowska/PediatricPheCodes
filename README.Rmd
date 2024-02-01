@@ -1,13 +1,13 @@
 ---
 title: "PedsPheWAS R package"
 author: "Monika Grabowska"
-date: "August 4, 2023"
+date: "January 30, 2024"
 output: html_document
 ---
 
 ## Introduction
 
-The PedsPheWAS R package is designed to perform phenome-wide association studies (PheWAS) using pediatric phecodes (Peds-Phecodes).
+The PedsPheWAS R package is designed to perform phenome-wide association studies (PheWAS) using pediatric phecodes (Peds-Phecodes). 
 
 This package was built based on the original PheWAS R package available at: https://github.com/PheWAS/PheWAS 
  
@@ -32,12 +32,13 @@ library(PedsPheWAS)
 
 ## Tutorial 
 
-This tutorial demonstrates how to use the PedsPheWAS R package to perform a PheWAS analysis using simulated data.
+This tutorial demonstrates how to use the PedsPheWAS R package to perform a PheWAS analysis using simulated data. 
+
+The current version of Peds-Phecodes supports ICD-9-CM, ICD-10-CM, and SNOMED CT codes.
 
 ### 1) Prepare and load input data
 
-
-To perform a PheWAS, the user must provide three data frames: 1) a data frame containing patient ICD-9-CM and ICD-10-CM codes and code counts (or code index dates), 2) a data frame with patient sex (used to determine case/control/exclude status for sex-specific phecodes), and 3) a data frame containing the patient genotypes. 
+To perform a PheWAS, the user must provide three data frames: 1) a data frame containing patient diagnosis codes (ICD-9-CM, ICD-10-CM, SNOMED CT) and code counts (or code index dates), 2) a data frame with patient sex (used to determine case/control/exclude status for sex-specific phecodes), and 3) a data frame containing the patient genotypes. 
 
 An example of each of these data frames is provided below, showing the required column formatting.  
 
@@ -71,9 +72,9 @@ example_data_genotypes <- vroom::vroom("./data/test_genotypes.csv",
 rmarkdown::paged_table(example_data_genotypes)
 ```
 
-### 2) Mapping ICD-9-CM and ICD-10-CM codes to pediatric phecodes (Peds-Phecodes)
+### 2) Mapping patient diagnosis codes to pediatric phecodes (Peds-Phecodes)
 
-The createPedPhenotypes() function maps the patient ICD-9-CM and ICD-10-CM codes to Peds-Phecodes.
+The createPedPhenotypes() function maps ICD-9-CM, ICD-10-CM, and SNOMED CT codes to Peds-Phecodes.
 
 ```{r step2a, echo = TRUE, message = FALSE}
 ped_phenotypes <- createPedPhenotypes(example_data_icd, example_data_sex)
@@ -151,7 +152,7 @@ test_plot3 <- plotManhattan(results, annotate.phenotype = F, y.axis.interval = 1
 
 ## Citations
 ##### Peds-Phecodes:
-(To be updated)
+Grabowska ME, Van Driest SL, Robinson JR, Patrick AE, Guardo C, Gangireddy S, Ong HH, Feng Q, Carroll R, Kannankeril PJ, Wei WQ. Developing and evaluating pediatric phecodes (Peds-Phecodes) for high-throughput phenotyping using electronic health records. J Am Med Inform Assoc. 2024 Jan 18;31(2):386-395. doi: 10.1093/jamia/ocad233. PMID: 38041473; PMCID: PMC10797257.
 
 ##### Original PheWAS R package: 
 Carroll RJ, Bastarache L, Denny JC. R PheWAS: data analysis and plotting tools for phenome-wide association studies in the R environment. Bioinformatics. 2014 Aug 15;30(16):2375-6. doi: 10.1093/bioinformatics/btu197. Epub 2014 Apr 14. PMID: 24733291; PMCID: PMC4133579.
